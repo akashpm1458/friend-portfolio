@@ -28,6 +28,11 @@
   overflow-x: clip; overflow-clip-margin: 20px;
 }
 .hero-title { margin: 0; text-align: center; }
+.hero-eyebrow {
+  margin: 0 0 clamp(10px, 1.6svh, 20px); text-align: center; color: var(--sc-ink);
+  font-size: clamp(14px, 1.5vw, 24px); font-weight: 600; letter-spacing: .32em; line-height: 1;
+  padding-left: .32em; /* balance trailing letter-spacing */
+}
 /* PERCEPTION is 10 letters (original SOFTWARE is 8), so the type is scaled by 0.8 */
 .hero-display-title {
   font-family: var(--sc-font-display); font-size: min(10.4vw, 19svh, 147px);
@@ -144,10 +149,11 @@
     --hero-image-width: clamp(136px, 28svh, 220px);
     --hero-image-overlap: 18px;
     --hero-mobile-type: min(9.7vw, 13.6svh, 64px);
-    --hero-heading-height: calc(var(--hero-mobile-type) * 1.8);
+    --hero-heading-height: calc(var(--hero-mobile-type) * 1.8 + 24px);
     --hero-image-bottom: calc((100svh - var(--hero-image-height) - var(--hero-heading-height) + var(--hero-image-overlap)) / 2 - 16px);
   }
   .hero .hero-display-title { font-size: var(--hero-mobile-type); }
+  .hero .hero-eyebrow { font-size: 13px; margin-bottom: 10px; }
   .hero .hero-footer { justify-content: space-between; gap: 12px; right: 0; bottom: 28px; }
   .hero .hero-year { display: block; font-size: 28px; }
   .hero .hero-focus { text-align: right; max-width: 72%; font-size: 12px; }

@@ -25,10 +25,11 @@ export const socials: { name: SocialName; url: string }[] = [
 export const activeSocials = socials.filter((s) => s.url);
 
 export const hero = {
+  eyebrow: "AKSA BIJU",
   lines: ["BANKING &", "INSURANCE"],
-  ariaLabel: "Banking and Insurance Professional",
+  ariaLabel: "Aksa Biju, Banking and Insurance",
   year: "©2026",
-  focus: "/BANKING, INSURANCE & COMMERCE",
+  focus: "/COMMERCE · FINANCIAL SERVICES · BUSINESS MANAGEMENT",
 };
 
 export const bio = {
