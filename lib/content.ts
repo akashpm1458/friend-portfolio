@@ -26,7 +26,7 @@ export const activeSocials = socials.filter((s) => s.url);
 
 export const hero = {
   eyebrow: "AKSA BIJU",
-  lines: ["BANKING &", "INSURANCE"],
+  lines: ["BANKING\u00a0&", "INSURANCE"],
   ariaLabel: "Aksa Biju, Banking and Insurance",
   year: "©2026",
   focus: "/COMMERCE · FINANCIAL SERVICES · BUSINESS MANAGEMENT",
