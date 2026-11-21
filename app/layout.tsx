@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://friend-portfolio.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://friend-portfolio-seven.vercel.app";
 const TITLE = `${person.name} | Banking & Insurance`;
 const DESCRIPTION =
   "Aksa Biju, commerce graduate (B.Com, Computer Applications) with two years of experience in banking and insurance at HDFC Bank and SUD Life in Kochi.";
