@@ -242,8 +242,8 @@ export const journey: JourneyStop[] = [
   },
   {
     id: "sud", cls: "journey-thesis", pill: "1 year", date: "[MM/YYYY] – [MM/YYYY]",
-    title: ["[Job title]"], place: "SUD Life", sub: "Kochi, India",
-    description: "**[One line on your main responsibility.]** [Add key duties and achievements.]",
+    title: ["Deputy Relationship", "Manager"], place: "SUD Life · Bancassurance (Peninsula)", sub: "Kochi, India",
+    description: "**Deputy Relationship Manager, Bancassurance (Peninsula).** [Add key duties and achievements.]",
   },
   {
     id: "hdfc", cls: "journey-work", pill: "1 year", date: "[MM/YYYY] – [MM/YYYY]",
@@ -272,7 +272,8 @@ export const heroCode = `const aksa = {
   ],
   experience: [
     { company: "HDFC Bank (Insurance)", city: "Kochi", duration: "1 year" },
-    { company: "SUD Life", city: "Kochi", duration: "1 year" }
+    { company: "SUD Life", role: "Deputy Relationship Manager (Bancassurance - Peninsula)",
+      city: "Kochi", duration: "1 year" }
   ],
   location: "${person.location}",
   email: "${person.email}"
@@ -305,7 +306,7 @@ export const chatProfile = {
   ],
   work: [
     "HDFC Bank, insurance, Kochi: 1 year of experience.",
-    "SUD Life, Kochi: 1 year of experience.",
+    "SUD Life, Kochi: Deputy Relationship Manager (Bancassurance - Peninsula), 1 year of experience.",
   ],
   projects: [eskf, ...studies].map(({ title, description, stack, metric, details }) => ({ title, description, stack, metric, details })),
   skills: skills.map((s) => ({ group: s.title, items: s.items })),
