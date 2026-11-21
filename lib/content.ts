@@ -253,7 +253,7 @@ export const journey: JourneyStop[] = [
   {
     id: "bachelor", cls: "journey-bachelor", pill: "", date: "Passed 13 Oct 2021",
     title: ["B.Com", "Computer Applications"], place: "Mahatma Gandhi University", sub: "Kerala, India",
-    description: "**Bachelor of Commerce, Model I: Computer Applications.** [Add key subjects or achievements.]",
+    description: "**Bachelor of Commerce, Model I: Computer Applications.** Computerised Accounting & Business Software Practical, Auditing and Assurance, Management Accounting, Cost Accounting II.",
   },
 ];
 
@@ -301,7 +301,7 @@ export const chatProfile = {
   languages: "[Languages and levels]",
   hobbies: "[Hobbies]",
   education: [
-    "B.Com (Bachelor of Commerce), Model I: Computer Applications, Mahatma Gandhi University, Kerala. Passed on 13 October 2021.",
+    "B.Com (Bachelor of Commerce), Model I: Computer Applications, Mahatma Gandhi University, Kerala. Passed on 13 October 2021. Key subjects: Computerised Accounting & Business Software Practical, Auditing and Assurance, Management Accounting, Cost Accounting II.",
   ],
   work: [
     "HDFC Bank, insurance, Kochi: 1 year of experience.",
