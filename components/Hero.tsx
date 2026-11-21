@@ -214,7 +214,6 @@ export function Hero() {
         <img src="/portrait.webp" alt={`${person.name} in black and white`} width={1000} height={1150} />
       </a>
       <div className="hero-heading-composition">
-        <p className="hero-eyebrow" aria-hidden="true">{hero.eyebrow}</p>
         <HeroTitle />
       </div>
       <div className="hero-footer">
