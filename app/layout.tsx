@@ -17,10 +17,10 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://akash-portfolio-green-one.vercel.app";
-const TITLE = "Akash Prakasan Manikyam | Radar Signal Processing & Perception";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://friend-portfolio.vercel.app";
+const TITLE = `${person.name} | Banking & Insurance`;
 const DESCRIPTION =
-  "Akash Prakasan Manikyam, M.Sc. student at FAU Erlangen-Nürnberg working on radar signal processing, sensor fusion and state estimation for autonomous driving.";
+  "Aksa Biju, commerce graduate (B.Com, Computer Applications) with two years of experience in banking and insurance at HDFC Bank and SUD Life in Kochi.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: "/",
-    siteName: "Akash Prakasan Manikyam",
+    siteName: person.name,
     locale: "en_US",
     type: "website",
-    images: [{ url: "/bg.jpg", width: 1280, height: 1280, alt: "Akash Prakasan Manikyam" }],
+    images: [{ url: "/bg.jpg", width: 1280, height: 1280, alt: person.name }],
   },
   twitter: { card: "summary", title: TITLE, description: DESCRIPTION, images: ["/bg.jpg"] },
 };
@@ -58,10 +58,10 @@ const jsonLd = {
       name: person.name,
       url: `${SITE_URL}/`,
       image: `${SITE_URL}/bg.jpg`,
-      jobTitle: "M.Sc. Student, Radar Signal Processing & State Estimation",
-      affiliation: { "@type": "CollegeOrUniversity", name: "Friedrich-Alexander-Universität Erlangen-Nürnberg" },
+      jobTitle: person.role,
+      alumniOf: { "@type": "CollegeOrUniversity", name: "Mahatma Gandhi University, Kerala" },
       email: `mailto:${person.email}`,
-      knowsAbout: ["Radar signal processing", "FMCW radar", "SAR", "Sensor fusion", "Kalman filtering", "State estimation", "Autonomous driving"],
+      knowsAbout: ["Banking", "Insurance", "Commerce", "Computer applications"],
       sameAs: activeSocials.map((s) => s.url),
     },
     { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: person.name, publisher: { "@id": `${SITE_URL}/#person` } },

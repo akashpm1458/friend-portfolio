@@ -6,72 +6,66 @@ import type { Count } from "@/components/CountUp";
 // =============================================================================
 
 export const person = {
-  name: "Akash Prakasan Manikyam",
-  firstName: "Akash",
-  lastName: "Prakasan Manikyam",
+  name: "Aksa Biju",
+  firstName: "Aksa",
+  lastName: "Biju",
   initial: "A.",
-  role: "Radar Signal Processing & State Estimation",
-  email: "prakasanmanikyam@outlook.com",
-  location: "Erlangen, Germany",
-  cvUrl: "", // add public/akash-cv.pdf, then set this to "/akash-cv.pdf"
-  siteTagline: "Erlangen, Germany",
+  role: "Banking & Insurance Professional",
+  email: "aksa.biju@example.com", // TODO replace with Aksa's real email
+  location: "Kochi, Kerala, India", // TODO confirm current location
+  cvUrl: "", // add public/aksa-cv.pdf, then set this to "/aksa-cv.pdf"
+  siteTagline: "Kochi, Kerala, India",
 };
 
 export type SocialName = "LinkedIn" | "GitHub";
 export const socials: { name: SocialName; url: string }[] = [
-  { name: "LinkedIn", url: "" }, // TODO add your LinkedIn URL
-  { name: "GitHub", url: "https://github.com/akashpm1458" },
+  { name: "LinkedIn", url: "" }, // TODO add Aksa's LinkedIn URL
+  { name: "GitHub", url: "" },
 ];
 export const activeSocials = socials.filter((s) => s.url);
 
 export const hero = {
-  lines: ["PERCEPTION", "ENGINEER"],
-  ariaLabel: "Perception Engineer",
+  lines: ["BANKING &", "INSURANCE"],
+  ariaLabel: "Banking and Insurance Professional",
   year: "©2026",
-  focus: "/RADAR SIGNAL PROCESSING & STATE ESTIMATION",
+  focus: "/BANKING, INSURANCE & COMMERCE",
 };
 
 export const bio = {
-  role: ["Radar Signal Processing", "& State Estimation."],
+  role: ["Banking & Insurance", "Professional."],
   current: {
-    org: "FAU Erlangen-Nürnberg",
-    title: "M.Sc. Electromobility, AI & Autonomous Driving",
-    place: "Erlangen, Germany",
+    org: "[Current organisation]",
+    title: "[Current role or what you are looking for]",
+    place: "Kochi, Kerala",
   },
   // text segments: [plain, bold, plain, bold, plain]
   lead: [
-    "I turn raw ",
-    "77 GHz radar data",
-    " into usable detections and fuse ",
-    "IMU, GNSS and LiDAR",
-    " into reliable vehicle state estimates.",
+    "Commerce graduate with ",
+    "two years of experience",
+    " across ",
+    "HDFC Bank and SUD Life",
+    " in Kochi. [Add one line about what you do best.]",
   ],
 };
 
 export const skills = [
   {
-    id: "skills-radar",
-    title: "Radar & Signal Processing",
-    note: "FMCW Radar, Detection & Clustering, SAR Imaging",
-    items: [
-      "FMCW Radar", "TDM-MIMO", "CA-CFAR", "DBSCAN", "CZT",
-      "Range-Doppler Processing", "SAR Backprojection", "Interference Mitigation", "Ego-Motion Estimation",
-    ],
+    id: "skills-banking",
+    title: "Banking & Insurance",
+    note: "[Short summary of this skill group]",
+    items: ["[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]"],
   },
   {
-    id: "skills-estimation",
-    title: "State Estimation & AI",
-    note: "Sensor Fusion, Kalman Filtering, Deep Learning",
-    items: [
-      "Kalman Filtering", "Error-State KF", "Sensor Fusion", "IMU / GNSS / LiDAR", "Testing & Validation",
-      "PyTorch", "YOLOv11", "Model Predictive Control", "Pattern Recognition",
-    ],
+    id: "skills-commerce",
+    title: "Commerce & Accounting",
+    note: "[Short summary of this skill group]",
+    items: ["[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]"],
   },
   {
     id: "skills-tools",
-    title: "Languages & Tools",
-    note: "Prototyping, GPU Acceleration, Tooling",
-    items: ["Python", "MATLAB", "Simulink", "C++", "CUDA", "ROS2", "Git", "Docker", "Linux"],
+    title: "Computer Applications & Tools",
+    note: "[Short summary of this skill group]",
+    items: ["[Tool]", "[Tool]", "[Tool]", "[Tool]", "[Tool]", "[Tool]"],
   },
 ];
 
@@ -90,69 +84,63 @@ export type Folder = {
 
 export const folders: Folder[] = [
   {
-    id: "sar-thesis", title: "SAR Autofocus", category: "Project thesis · Case study",
+    id: "case-study", title: "[Highlight]", category: "[Category] · Case study",
     action: "Read case study", kind: "case-study",
-    backLabel: "Case study overview", frontLabel: "Chain, method & validation",
+    backLabel: "Case study overview", frontLabel: "Context, approach & result",
   },
   {
-    id: "eskf", title: "ESKF Localization", category: "Multi-sensor state estimation",
-    action: "View project", kind: "project", image: "/eskf.png",
-    backLabel: "Project overview", frontLabel: "Details & source",
+    id: "project-one", title: "[Project 1]", category: "[Short category]",
+    action: "View project", kind: "project", image: "/project-1.png",
+    backLabel: "Project overview", frontLabel: "Details",
   },
   {
-    id: "radar-interference", title: "Radar Interference", category: "77 GHz interference mitigation",
-    action: "View project", kind: "project", image: "/radar-interference.png",
-    backLabel: "Project overview", frontLabel: "Details & source",
+    id: "project-two", title: "[Project 2]", category: "[Short category]",
+    action: "View project", kind: "project", image: "/project-2.png",
+    backLabel: "Project overview", frontLabel: "Details",
   },
   {
-    id: "kitti-perception", title: "KITTI Perception", category: "Detection with depth",
-    action: "View project", kind: "project", image: "/kitti-perception.png",
-    backLabel: "Project overview", frontLabel: "Details & source",
+    id: "project-three", title: "[Project 3]", category: "[Short category]",
+    action: "View project", kind: "project", image: "/project-3.png",
+    backLabel: "Project overview", frontLabel: "Details",
   },
 ];
 
-// Numbers that animate when they scroll into view ("from" is where the counter starts)
-const gradeCount: Count = { match: "1.3", from: 5, decimals: 1 }; // German scale, counts down to 1.3
-
 export const caseStudy = {
-  id: "sar-thesis",
-  preview: { top: "Lehrstuhl für Hochfrequenztechnik", big: ["From raw radar", "to sharp SAR."], bottom: "Project thesis · Grade 1.3" },
-  toolbar: "Thesis case study",
+  id: "case-study",
+  preview: { top: "[Organisation]", big: ["[Headline", "result.]"], bottom: "[Year] · Case study" },
+  toolbar: "Case study",
   image: {
-    src: "/lhft-test-vehicle.jpg",
+    src: "/case-study.png",
     width: 1536,
     height: 1024,
-    alt: "LHFT MARK I research vehicle with front-mounted 77 GHz radar sensors",
-    caption: "LHFT MARK I, the institute's test vehicle used for the measurement campaign.",
-    sourceLabel: "LHFT, FAU",
-    sourceUrl: "https://www.lhft.tf.fau.de/eis-radar-labor/",
+    alt: "Case study image placeholder",
+    caption: "[Image caption]",
+    sourceLabel: "[Image source]",
+    sourceUrl: "#",
   },
-  title: "Automated GCP Selection for SAR Autofocus",
-  category: "Lehrstuhl für Hochfrequenztechnik, FAU · Project thesis",
-  summary:
-    "An automated signal processing chain that selects ground control points directly from the radar range-angle map, before SAR image formation, to support SAR autofocus.",
+  title: "[Case study title]",
+  category: "[Organisation] · [Type of work]",
+  summary: "[Two sentence summary of the work and why it mattered.]",
   facts: [
-    ["Role", "Project thesis student"],
-    ["Period", "12/2025 – 05/2026"],
-    ["Stack", "MATLAB · CUDA C++ (MEX)"],
-    ["Data", "77 GHz FMCW TDM-MIMO, institute test vehicle"],
-    ["Grade", "1.3"],
+    ["Role", "[Your role]"],
+    ["Period", "[MM/YYYY] – [MM/YYYY]"],
+    ["Tools", "[Tools used]"],
+    ["Team", "[Team size or setup]"],
+    ["Result", "[Key result]"],
   ] as [string, string][],
-  factCounts: { Grade: gradeCount } as Record<string, Count>,
-  note: "Measurement data belongs to the Lehrstuhl für Hochfrequenztechnik. Figures shown are illustrative.",
-  challenge:
-    "Residual velocity errors defocus automotive SAR images, and automotive-grade navigation lacks the accuracy and update rate to correct them chirp to chirp. Autofocus needs stable GCPs, but selecting them from SAR images by brightness depends on the focused image they are meant to produce.",
+  factCounts: {} as Record<string, Count>,
+  note: "[Optional note, e.g. figures are illustrative.]",
+  challenge: "[What problem or goal did you face?]",
   steps: [
-    ["Detect candidates", "Ran CA-CFAR on the TDM-MIMO range-angle map, then consolidated detections with DBSCAN and a per-range-bin filter."],
-    ["Refine locally", "Applied a local CZT zoom around each candidate to localise its peak without zero-padding the full spectrum."],
-    ["Select point scatterers", "Kept only candidates whose refined response matched an ideal point spread function via NCC."],
-    ["Validate in SAR", "Reconstructed each GCP with backprojection and scored its phase stability with a phase coherency factor."],
+    ["[Step 1]", "[What you did first.]"],
+    ["[Step 2]", "[What you did next.]"],
+    ["[Step 3]", "[How you followed through.]"],
+    ["[Step 4]", "[How you checked the result.]"],
   ],
-  impact:
-    "A deterministic chain that provides autofocus reference points without prior SAR processing, validated on a real measurement campaign on the TF campus.",
-  before: ["Before · GCP selection", "Post-SAR, amplitude\u2011based"],
-  after: ["After · GCP selection", "Pre-SAR, PSF\u2011based"],
-  estimate: "Validated in the SAR domain by phase coherency analysis on real-world measurement data.",
+  impact: "[What changed because of your work.]",
+  before: ["Before", "[Situation before]"],
+  after: ["After", "[Situation after]"],
+  estimate: "[Optional supporting detail.]",
 };
 
 export type Study = {
@@ -175,8 +163,6 @@ export type Study = {
   details: string[];
 };
 
-const eskfRepo = "https://github.com/akashpm1458/vehicle-localization-eskf";
-
 export const eskf: Study & {
   diagram: {
     title: string; groupLabel: string;
@@ -185,169 +171,138 @@ export const eskf: Study & {
     b: { key: string; button: string; title: string; sub: string; explain: string };
   };
 } = {
-  id: "eskf",
-  title: "ESKF Localization",
-  category: "Multi-sensor state estimation",
-  summaryLabel: "Inside the filter",
-  description:
-    "Vehicle state estimation with 9 and 15 state error-state Kalman filters fusing IMU, GNSS and LiDAR in Python.",
-  stack: ["Python", "NumPy", "Error-State KF", "IMU", "GNSS", "LiDAR"],
-  metric: "0.096 m position RMSE",
-  metricCount: { match: "0.096", from: 1, decimals: 3 }, // counts down, like a filter converging
-  image: "/eskf.png", imageWidth: 1600, imageHeight: 1000, imageBg: "#d1d2cf",
-  imageAlt: "ESKF localization result plot",
-  imageHref: eskfRepo, imageLinkLabel: "View ESKF source",
-  links: [{ label: "Source", href: eskfRepo, icon: "source" }],
-  details: [
-    "Implemented and compared 9 and 15 state error-state Kalman filters fusing IMU, GNSS and LiDAR for vehicle state estimation.",
-    "Stress tests: sensor dropouts, degraded GNSS and injected measurement outliers.",
-    "Failure analysis: investigated a mode where gating rejected valid GNSS measurements after prolonged degradation.",
-    "Period: 01/2026 – 05/2026.",
-  ],
+  id: "project-one",
+  title: "[Project 1]",
+  category: "[Short category]",
+  summaryLabel: "Project details",
+  description: "[One or two sentences describing the project.]",
+  stack: ["[Tool]", "[Tool]", "[Tool]"],
+  metric: "[Key result]",
+  image: "/project-1.png", imageWidth: 1600, imageHeight: 1000, imageBg: "#d1d2cf",
+  imageAlt: "Project 1 image placeholder",
+  links: [],
+  details: ["[Detail about what you did.]", "[Detail about the outcome.]", "Period: [MM/YYYY] – [MM/YYYY]."],
   diagram: {
-    title: "Filter walkthrough",
-    groupLabel: "Compare filter variants",
-    input: "IMU prediction · GNSS + LiDAR updates",
-    routerTitle: "Error-State KF",
-    routerSub: "Predict on IMU, correct on fixes",
-    a: { key: "9", button: "9-state", title: "9-state filter", sub: "Position, velocity, attitude",
-      explain: "The compact filter tracks pose and velocity only and leans on frequent GNSS fixes." },
-    b: { key: "15", button: "15-state", title: "15-state filter", sub: "+ accelerometer & gyro biases",
-      explain: "Bias states let the filter keep drift in check during GNSS dropouts and degraded fixes." },
+    title: "How it works",
+    groupLabel: "Compare two options",
+    input: "[Input]",
+    routerTitle: "[Process]",
+    routerSub: "[Short description]",
+    a: { key: "a", button: "[Option A]", title: "[Option A]", sub: "[Short description]",
+      explain: "[Explain option A.]" },
+    b: { key: "b", button: "[Option B]", title: "[Option B]", sub: "[Short description]",
+      explain: "[Explain option B.]" },
   },
 };
 
 export const studies: Study[] = [
   {
-    id: "radar-interference",
-    title: "Radar Interference Mitigation",
-    category: "77 GHz interference mitigation",
+    id: "project-two",
+    title: "[Project 2]",
+    category: "[Short category]",
     summaryLabel: "Project details",
-    description:
-      "A 77 GHz PC-FMCW radar simulation that suppresses interference from other radars using phase coding.",
-    stack: ["MATLAB", "PC-FMCW", "GMSK", "Range-Doppler"], // TODO confirm MATLAB
-    metric: "Interference power spread across the range-Doppler profile",
-    image: "/radar-interference.png", imageWidth: 1600, imageHeight: 900, imageBg: "#d5d1e0",
-    imageAlt: "Range-Doppler map of the interference simulation",
+    description: "[One or two sentences describing the project.]",
+    stack: ["[Tool]", "[Tool]", "[Tool]"],
+    image: "/project-2.png", imageWidth: 1600, imageHeight: 900, imageBg: "#d5d1e0",
+    imageAlt: "Project 2 image placeholder",
     links: [],
-    details: [
-      "Implemented GMSK fast-time and slow-time phase coding with phase lag compensation and group delay filtering.",
-      "Simulated coherent narrowband, coherent wideband and non-coherent wideband interference against conventional FMCW.",
-      "Period: 06/2025 – 12/2025.",
-    ],
+    details: ["[Detail about what you did.]", "Period: [MM/YYYY] – [MM/YYYY]."],
   },
   {
-    id: "kitti-perception",
-    title: "KITTI Perception",
-    category: "Detection with depth",
+    id: "project-three",
+    title: "[Project 3]",
+    category: "[Short category]",
     summaryLabel: "Project details",
-    description:
-      "YOLOv11 object detection on the KITTI dataset, combined with MiDaS monocular depth estimation.",
-    stack: ["Python", "PyTorch", "YOLOv11", "MiDaS", "KITTI"],
-    // metric: "TODO e.g. mAP@0.5 on KITTI val",
-    image: "/kitti-perception.png", imageWidth: 1600, imageHeight: 800, imageBg: "#c7cdc7",
-    imageAlt: "Object detection frame with depth overlay",
+    description: "[One or two sentences describing the project.]",
+    stack: ["[Tool]", "[Tool]", "[Tool]"],
+    image: "/project-3.png", imageWidth: 1600, imageHeight: 800, imageBg: "#c7cdc7",
+    imageAlt: "Project 3 image placeholder",
     links: [],
-    details: ["Combines 2D detections with per-pixel monocular depth to estimate how far each detected object is."],
+    details: ["[Detail about what you did.]"],
   },
 ];
 
 // ---------- Experience ----------
 // Wrap text in **double asterisks** to make it bold.
-export const journey = [
+export type JourneyStop = {
+  id: string; cls: string; pill: string; pillCount?: Count; date: string;
+  title: string[]; place: string; sub: string; description: string;
+};
+export const journey: JourneyStop[] = [
   {
-    id: "msc", cls: "journey-now", pill: "Current", date: "Present",
-    title: ["M.Sc. Electromobility"], place: "FAU Erlangen-Nürnberg", sub: "Erlangen",
-    description: "**Major in AI & Autonomous Driving.** Numerical Optimization & MPC, Robotics Frameworks, Pattern Recognition, Deep Learning.",
+    id: "now", cls: "journey-now", pill: "Current", date: "Present",
+    title: ["[Current role]"], place: "[Organisation]", sub: "[City]",
+    description: "[What you are doing now, or the role you are looking for.]",
   },
   {
-    id: "thesis", cls: "journey-thesis", pill: "Grade 1.3", pillCount: gradeCount, date: "12/2025 – 05/2026",
-    title: ["Project Thesis"], place: "Lehrstuhl für Hochfrequenztechnik", sub: "FAU Erlangen",
-    description: "**Automated radar-based GCP selection for SAR autofocus on 77 GHz FMCW data.**",
+    id: "sud", cls: "journey-thesis", pill: "1 year", date: "[MM/YYYY] – [MM/YYYY]",
+    title: ["[Job title]"], place: "SUD Life", sub: "Kochi, India",
+    description: "**[One line on your main responsibility.]** [Add key duties and achievements.]",
   },
   {
-    id: "work", cls: "journey-work", pill: "", date: "10/2020 – 11/2021",
-    title: ["Production Executive"], place: "Fabbri Foods Pvt Ltd", sub: "Kozhikode, India",
-    description: "Enforced quality control standards, analyzed production data to optimize workflows and prepared reports for management reviews.",
+    id: "hdfc", cls: "journey-work", pill: "1 year", date: "[MM/YYYY] – [MM/YYYY]",
+    title: ["[Job title]"], place: "HDFC Bank · Insurance", sub: "Kochi, India",
+    description: "**[One line on your main responsibility.]** [Add key duties and achievements.]",
   },
   {
-    id: "bachelor", cls: "journey-bachelor", pill: "", date: "04/2015 – 05/2020",
-    title: ["B.Tech Mechanical", "Engineering"], place: "APJ Abdul Kalam Technological University", sub: "India",
-    description: "Design of Machine Elements, Kinematics of Machines, Manufacturing Processes.",
+    id: "bachelor", cls: "journey-bachelor", pill: "", date: "Passed 13 Oct 2021",
+    title: ["B.Com", "Computer Applications"], place: "Mahatma Gandhi University", sub: "Kerala, India",
+    description: "**Bachelor of Commerce, Model I: Computer Applications.** [Add key subjects or achievements.]",
   },
 ];
 
 export const contact = {
-  blurb: "Open to working student, internship and thesis roles in radar, sensor fusion and perception. My inbox is open.",
-  messagePlaceholder: "A little about the role or project…",
+  blurb: "Open to roles in banking, insurance and finance. [Edit this line.] My inbox is open.",
+  messagePlaceholder: "A little about the role or opportunity…",
 };
 
 // Source for the faint code wall behind the hero (also good context for the chatbot)
-export const heroCode = `const akash = {
+export const heroCode = `const aksa = {
   name: "${person.name}",
   role: "${person.role}",
-  focus: ["Radar signal processing", "Sensor fusion", "State estimation"],
-  study: { degree: "M.Sc. Electromobility", major: "AI & Autonomous Driving",
-    university: "FAU Erlangen-Nürnberg", status: "Current" },
-  thesis: { title: "Automated Radar-Based GCP Selection for SAR Autofocus",
-    lab: "Lehrstuhl für Hochfrequenztechnik", grade: 1.3,
-    chain: ["CA-CFAR", "DBSCAN", "CZT", "PSF correlation", "CUDA backprojection"] },
-  experience: [
-    { role: "Production Executive", company: "Fabbri Foods Pvt Ltd",
-      city: "Kozhikode", period: "10/2020 – 11/2021" }
-  ],
+  focus: ["Banking", "Insurance", "Commerce"],
   education: [
-    { degree: "B.Tech Mechanical Engineering",
-      university: "APJ Abdul Kalam Technological University", period: "2015 – 2020" }
+    { degree: "B.Com, Model I: Computer Applications",
+      university: "Mahatma Gandhi University, Kerala", passed: "13 Oct 2021" }
   ],
-  projects: {
-    ESKF: "9 vs 15 state error-state Kalman filters, 0.096 m RMSE",
-    RadarInterference: "77 GHz PC-FMCW with GMSK phase coding",
-    KITTI: "YOLOv11 detection with MiDaS depth"
-  },
-  skills: {
-    radar: ["FMCW", "TDM-MIMO", "CA-CFAR", "DBSCAN", "CZT", "SAR"],
-    estimation: ["Kalman filtering", "ESKF", "Sensor fusion", "IMU", "GNSS", "LiDAR"],
-    tools: ["Python", "MATLAB", "Simulink", "C++", "CUDA", "PyTorch",
-      "Git", "Docker", "Linux"]
-  },
-  languages: { English: "C1", German: "A2" },
-  hobbies: ["5 km personal bests", "Basketball", "Hiking"],
-  email: "${person.email}",
-  github: "https://github.com/akashpm1458"
+  experience: [
+    { company: "HDFC Bank (Insurance)", city: "Kochi", duration: "1 year" },
+    { company: "SUD Life", city: "Kochi", duration: "1 year" }
+  ],
+  location: "${person.location}",
+  email: "${person.email}"
 };
 
 export default function Portfolio() {
   return <main>
-    <header><h1>{akash.name}</h1><p>{akash.role}</p></header>
-    <section><h2>Thesis</h2>
-      <article><h3>{akash.thesis.title}</h3><p>{akash.thesis.lab}</p>
-        <small>Grade {akash.thesis.grade}</small></article>
+    <header><h1>{aksa.name}</h1><p>{aksa.role}</p></header>
+    <section><h2>Experience</h2>
+      {aksa.experience.map((job) =>
+        <article key={job.company}><h3>{job.company}</h3>
+          <p>{job.city} · {job.duration}</p></article>)}
     </section>
-    <section><h2>Projects</h2>
-      {Object.entries(akash.projects).map(([name, detail]) =>
-        <article key={name}><h3>{name}</h3><p>{detail}</p></article>)}
+    <section><h2>Education</h2>
+      {aksa.education.map((e) =>
+        <article key={e.degree}><h3>{e.degree}</h3><p>{e.university}</p>
+          <small>Passed {e.passed}</small></article>)}
     </section>
-    <section><h2>Tech Stack</h2>
-      {Object.entries(akash.skills).map(([group, tools]) =>
-        <div key={group}><h3>{group}</h3><p>{tools.join(", ")}</p></div>)}
-    </section>
-    <footer><a href={"mailto:" + akash.email}>Let's talk.</a></footer>
+    <footer><a href={"mailto:" + aksa.email}>Let's talk.</a></footer>
   </main>;
 }`;
 
-// Extra facts only the chatbot uses
+// Extra facts only the chatbot uses. Fields still in [brackets] are placeholders.
 export const chatProfile = {
   ...person,
-  languages: { English: "C1, full professional proficiency", German: "A2, actively improving" },
-  hobbies: ["Chasing 5 km personal bests", "Basketball", "Hiking"],
+  languages: "[Languages and levels]",
+  hobbies: "[Hobbies]",
   education: [
-    "M.Sc. Electromobility (Major: AI & Autonomous Driving), FAU Erlangen-Nürnberg, ongoing. Modules: Numerical Optimization and Model Predictive Control, Robotics Frameworks, Pattern Recognition, Deep Learning.",
-    "B.Tech Mechanical Engineering, APJ Abdul Kalam Technological University, India, 04/2015 – 05/2020.",
+    "B.Com (Bachelor of Commerce), Model I: Computer Applications, Mahatma Gandhi University, Kerala. Passed on 13 October 2021.",
   ],
-  thesis: caseStudy,
+  work: [
+    "HDFC Bank, insurance, Kochi: 1 year of experience.",
+    "SUD Life, Kochi: 1 year of experience.",
+  ],
   projects: [eskf, ...studies].map(({ title, description, stack, metric, details }) => ({ title, description, stack, metric, details })),
-  work: journey.filter((j) => j.id === "work"),
   skills: skills.map((s) => ({ group: s.title, items: s.items })),
   socials: activeSocials,
 };

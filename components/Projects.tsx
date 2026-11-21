@@ -226,7 +226,7 @@ function CaseStudyArticle({ active }: { active: boolean }) {
         <section className="case-study-section" aria-labelledby={`${c.id}-impact`}>
           <h4 id={`${c.id}-impact`}>The impact</h4>
           <p>{c.impact}</p>
-          <div className="case-study-impact" role="group" aria-label="Ground control point selection before and after">
+          <div className="case-study-impact" role="group" aria-label="Before and after">
             <dl><dt>{c.before[0]}</dt><dd>{c.before[1]}</dd></dl>
             <ArrowRight size={24} aria-hidden="true" />
             <dl><dt>{c.after[0]}</dt><dd>{c.after[1]}</dd></dl>
@@ -267,7 +267,7 @@ export function Projects() {
           </a>
         )}
       </div>
-      <p className="projects-intro">Thesis research and independent projects. Open a folder to explore a project or case study.</p>
+      <p className="projects-intro">[Short intro to your work.] Open a folder to explore a project or case study.</p>
 
       <div className="project-folder-grid">
         {folders.map((f) => (

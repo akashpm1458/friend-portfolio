@@ -20,7 +20,7 @@ export function Footer() {
       <div className="footer-top wrap">
         <div className="footer-identity">
           <h2>{person.firstName}<br />{person.lastName}.</h2>
-          <p>Radar Signal Processing &amp;<br />State Estimation.</p>
+          <p>Banking &amp;<br />Insurance.</p>
         </div>
         <nav aria-label="Footer navigation">
           <p>Explore</p>
