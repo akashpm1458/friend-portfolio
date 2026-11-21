@@ -258,7 +258,7 @@ export const journey: JourneyStop[] = [
 ];
 
 export const contact = {
-  blurb: "Open to roles in banking, insurance and finance. [Edit this line.] My inbox is open.",
+  blurb: "Open to roles in banking, insurance and finance.",
   messagePlaceholder: "A little about the role or opportunity…",
 };
 
