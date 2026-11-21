@@ -53,20 +53,26 @@ export const skills = [
   {
     id: "skills-banking",
     title: "Banking & Insurance",
-    note: "[Short summary of this skill group]",
-    items: ["[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]"],
+    note: "Experience in financial services, sales and customer relationships.",
+    items: [
+      "Banking Products", "Life Insurance", "Customer Relationship Management",
+      "Financial Services", "Sales Management", "Customer Communication",
+    ],
   },
   {
     id: "skills-commerce",
     title: "Commerce & Accounting",
-    note: "[Short summary of this skill group]",
-    items: ["[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]", "[Skill]"],
+    note: "Accounting, auditing and financial markets.",
+    items: [
+      "Financial Accounting", "Corporate Accounting", "Cost Accounting",
+      "Management Accounting", "Financial Markets", "Auditing & Assurance",
+    ],
   },
   {
     id: "skills-tools",
     title: "Computer Applications & Tools",
-    note: "[Short summary of this skill group]",
-    items: ["[Tool]", "[Tool]", "[Tool]", "[Tool]", "[Tool]", "[Tool]"],
+    note: "Office, accounting, reporting and CRM tools.",
+    items: ["Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint", "TallyPrime", "Power BI", "CRM Software"],
   },
 ];
 
