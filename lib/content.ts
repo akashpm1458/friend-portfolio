@@ -43,7 +43,7 @@ export const bio = {
     "Commerce graduate with ",
     "two years of experience",
     " across ",
-    "HDFC Bank and SUD Life",
+    "HDFC Bank and Star Union Dai-ichi Life",
     " in Kochi. [Add one line about what you do best.]",
   ],
 };
@@ -241,8 +241,8 @@ export const journey: JourneyStop[] = [
     description: "[What you are doing now, or the role you are looking for.]",
   },
   {
-    id: "sud", cls: "journey-thesis", pill: "1 year", date: "[MM/YYYY] – [MM/YYYY]",
-    title: ["Deputy Relationship", "Manager"], place: "SUD Life · Bancassurance (Peninsula)", sub: "Kochi, India",
+    id: "sud", cls: "journey-thesis", pill: "9 months", date: "10/2025 – 07/2026",
+    title: ["Deputy Relationship", "Manager"], place: "Star Union Dai-ichi Life Insurance Co Ltd", sub: "Bancassurance (Peninsula) · Kochi, India",
     description: "**Deputy Relationship Manager, Bancassurance (Peninsula).** [Add key duties and achievements.]",
   },
   {
@@ -272,8 +272,8 @@ export const heroCode = `const aksa = {
   ],
   experience: [
     { company: "HDFC Bank (Insurance)", city: "Kochi", duration: "1 year" },
-    { company: "SUD Life", role: "Deputy Relationship Manager (Bancassurance - Peninsula)",
-      city: "Kochi", duration: "1 year" }
+    { company: "Star Union Dai-ichi Life Insurance", role: "Deputy Relationship Manager (Bancassurance - Peninsula)",
+      city: "Kochi", duration: "10/2025 – 07/2026" }
   ],
   location: "${person.location}",
   email: "${person.email}"
@@ -306,7 +306,7 @@ export const chatProfile = {
   ],
   work: [
     "HDFC Bank, insurance, Kochi: 1 year of experience.",
-    "SUD Life, Kochi: Deputy Relationship Manager (Bancassurance - Peninsula), 1 year of experience.",
+    "Star Union Dai-ichi Life Insurance Co Ltd (SUD Life), Kochi: Deputy Relationship Manager (Bancassurance - Peninsula), 23 October 2025 to 14 July 2026.",
   ],
   projects: [eskf, ...studies].map(({ title, description, stack, metric, details }) => ({ title, description, stack, metric, details })),
   skills: skills.map((s) => ({ group: s.title, items: s.items })),
