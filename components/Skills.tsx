@@ -5,8 +5,8 @@ export function Skills() {
     <section id="skills" className="skills-section section-pad">
       <div className="wrap">
         <div className="skills-heading">
-          <h2>Tech Stack</h2>
-          <p>The tools behind<br />my work.</p>
+          <h2>Skills</h2>
+          <p>What I bring<br />to the table.</p>
         </div>
         <div className="skills-specimens">
           {skills.map((group) => (
