@@ -11,7 +11,7 @@ export const person = {
   lastName: "Biju",
   initial: "A.",
   role: "Banking & Insurance Professional",
-  email: "aksa.biju@example.com", // TODO replace with Aksa's real email
+  email: "aksabiju007@gmail.com",
   location: "Kochi, Kerala, India", // TODO confirm current location
   cvUrl: "", // add public/aksa-cv.pdf, then set this to "/aksa-cv.pdf"
   siteTagline: "Kochi, Kerala, India",
