@@ -259,7 +259,6 @@ export const journey: JourneyStop[] = [
 
 export const contact = {
   blurb: "Open to roles in banking, insurance and finance.",
-  messagePlaceholder: "A little about the role or opportunity…",
 };
 
 // Source for the faint code wall behind the hero (also good context for the chatbot)
