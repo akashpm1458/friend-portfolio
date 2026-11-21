@@ -251,7 +251,7 @@ export const journey: JourneyStop[] = [
     description: "**[One line on your main responsibility.]** [Add key duties and achievements.]",
   },
   {
-    id: "bachelor", cls: "journey-bachelor", pill: "", date: "Passed 13 Oct 2021",
+    id: "bachelor", cls: "journey-bachelor", pill: "", date: "2018 – 2021",
     title: ["B.Com", "Computer Applications"], place: "Mahatma Gandhi University", sub: "Kerala, India",
     description: "**Bachelor of Commerce, Model I: Computer Applications.** Computerised Accounting & Business Software Practical, Auditing and Assurance, Management Accounting, Cost Accounting II.",
   },
@@ -268,7 +268,7 @@ export const heroCode = `const aksa = {
   focus: ["Banking", "Insurance", "Commerce"],
   education: [
     { degree: "B.Com, Model I: Computer Applications",
-      university: "Mahatma Gandhi University, Kerala", passed: "13 Oct 2021" }
+      university: "Mahatma Gandhi University, Kerala", period: "2018 – 2021" }
   ],
   experience: [
     { company: "HDFC Bank (Insurance)", city: "Kochi", duration: "1 year" },
@@ -289,7 +289,7 @@ export default function Portfolio() {
     <section><h2>Education</h2>
       {aksa.education.map((e) =>
         <article key={e.degree}><h3>{e.degree}</h3><p>{e.university}</p>
-          <small>Passed {e.passed}</small></article>)}
+          <small>{e.period}</small></article>)}
     </section>
     <footer><a href={"mailto:" + aksa.email}>Let's talk.</a></footer>
   </main>;
@@ -301,7 +301,7 @@ export const chatProfile = {
   languages: "[Languages and levels]",
   hobbies: "[Hobbies]",
   education: [
-    "B.Com (Bachelor of Commerce), Model I: Computer Applications, Mahatma Gandhi University, Kerala. Passed on 13 October 2021. Key subjects: Computerised Accounting & Business Software Practical, Auditing and Assurance, Management Accounting, Cost Accounting II.",
+    "B.Com (Bachelor of Commerce), Model I: Computer Applications, Mahatma Gandhi University, Kerala. Studied 2018 – 2021, passed on 13 October 2021. Key subjects: Computerised Accounting & Business Software Practical, Auditing and Assurance, Management Accounting, Cost Accounting II.",
   ],
   work: [
     "HDFC Bank, insurance, Kochi: 1 year of experience.",
