@@ -80,11 +80,10 @@
 /* ---------- portrait journey ---------- */
 .portrait-journey { position: absolute; inset: 0 0 auto; z-index: 2; pointer-events: none; display: none; }
 .portrait-sticky-stage { position: sticky; top: 0; height: 100vh; }
-.portrait-card { position: absolute; transform-style: preserve-3d; }
-.portrait-face { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; backface-visibility: hidden; }
-.portrait-face-back { transform: rotateY(180deg); }
+.portrait-card { position: absolute; }
+.portrait-face { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; }
 .portrait-face img { width: 100%; height: 100%; object-fit: cover; object-position: bottom; display: block; }
-.portrait-face-front img { filter: grayscale(); }
+.portrait-face-front img { filter: grayscale(var(--portrait-gray, 1)); }
 
 @media (prefers-reduced-motion: no-preference) {
   .portrait-motion-ready .portrait-journey { display: block; visibility: hidden; }

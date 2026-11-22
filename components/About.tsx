@@ -32,7 +32,8 @@ function PortraitJourney() {
     const render = () => {
       const p = current;
       const flip = p * p * (3 - 2 * p);
-      card.style.transform = `perspective(1200px) translate(${dx * (1 - p)}px, ${dy * (1 - p)}px) scale(${sx + (1 - sx) * p}, ${sy + (1 - sy) * p}) rotateY(${180 * flip}deg)`;
+      card.style.transform = `translate(${dx * (1 - p)}px, ${dy * (1 - p)}px) scale(${sx + (1 - sx) * p}, ${sy + (1 - sy) * p})`;
+      card.style.setProperty("--portrait-gray", String(1 - flip));
       card.style.borderRadius = `${rFrom + (rTo - rFrom) * p}px`;
       card.style.willChange = p > 0 && p < 1 ? "transform" : "auto";
       section.classList.toggle("portrait-motion-active", target > 0 || p > 0);
@@ -114,7 +115,6 @@ function PortraitJourney() {
         <div ref={cardRef} className="portrait-card">
           {/* eslint-disable @next/next/no-img-element */}
           <div className="portrait-face portrait-face-front"><img src="/portrait.webp" alt="" /></div>
-          <div className="portrait-face portrait-face-back"><img src="/portrait.webp" alt="" /></div>
         </div>
       </div>
     </div>
