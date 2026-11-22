@@ -243,7 +243,7 @@ export const journey: JourneyStop[] = [
   {
     id: "sud", cls: "journey-thesis", pill: "9 months", date: "10/2025 – 07/2026",
     title: ["Deputy Relationship", "Manager"], place: "Star Union Dai-ichi Life Insurance Co Ltd", sub: "Bancassurance (Peninsula) · Kochi, India",
-    description: "**Deputy Relationship Manager, Bancassurance (Peninsula).** [Add key duties and achievements.]",
+    description: "**Functional analysis of life insurance products and business processes.** MIS reporting and KPI monitoring. Cross-functional coordination between distribution, underwriting and policy administration teams.",
   },
   {
     id: "hdfc", cls: "journey-work", pill: "1 year", date: "[MM/YYYY] – [MM/YYYY]",
@@ -306,7 +306,7 @@ export const chatProfile = {
   ],
   work: [
     "HDFC Bank, insurance, Kochi: 1 year of experience.",
-    "Star Union Dai-ichi Life Insurance Co Ltd (SUD Life), Kochi: Deputy Relationship Manager (Bancassurance - Peninsula), 23 October 2025 to 14 July 2026.",
+    "Star Union Dai-ichi Life Insurance Co Ltd (SUD Life), Kochi: Deputy Relationship Manager (Bancassurance - Peninsula), 23 October 2025 to 14 July 2026 Responsibilities: functional analysis of life insurance products and business processes; policy lifecycle management across digital insurance platforms; analysis of operational workflows and identification of process optimisation opportunities; business performance analysis, MIS reporting and KPI monitoring; data quality management and policy information validation; identification and resolution of operational and system-related issues; cross-functional coordination between distribution, underwriting and policy administration teams; banking partner management and customer requirements assessment.",
   ],
   projects: [eskf, ...studies].map(({ title, description, stack, metric, details }) => ({ title, description, stack, metric, details })),
   skills: skills.map((s) => ({ group: s.title, items: s.items })),
